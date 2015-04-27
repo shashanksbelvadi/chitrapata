@@ -52,3 +52,6 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# Cache folder
+photo_cache/*
