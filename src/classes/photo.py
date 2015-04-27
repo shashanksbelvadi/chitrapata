@@ -1,6 +1,3 @@
-import boto
-import uuid
-
 class Photo(object):
     bucketname = ''
     filename = ''
