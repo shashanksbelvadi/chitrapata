@@ -13,7 +13,7 @@ class Connection(object):
             Singleton to avoid making duplicate connections 
             during an execution context.
         '''
-        if self.connection == None:
+        if self.s3_connection == None:
             self.s3_connection = boto.connect_s3()
 
         return self.s3_connection
