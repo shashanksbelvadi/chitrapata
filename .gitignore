@@ -55,3 +55,6 @@ target/
 
 # Cache folder
 photo_cache/*
+
+# AWS Credentials
+src/classes/credentials.py
