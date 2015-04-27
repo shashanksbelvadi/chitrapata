@@ -1,4 +1,6 @@
 import os
+import connection
+
 
 class Bucket(object):
     BUCKET_NAME = ''

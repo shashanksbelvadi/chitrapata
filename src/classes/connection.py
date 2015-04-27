@@ -6,6 +6,7 @@ class Connection(object):
     s3_connection = None
 
     def __init__(self):
+        pass
 
     def getconnection(self):
         ''' 
