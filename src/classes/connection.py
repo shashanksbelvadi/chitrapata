@@ -1,16 +1,12 @@
-from boto.s3.connection import S3Connection
-import credentials
+import boto
 
 
 class Connection(object):
-    ACCESS_KEY = ''
-    SECRET_KEY = ''
 
     s3_connection = None
 
-    def __init__(self, access_key, secret_key):
-        self.ACCESS_KEY = credentials.Credentials.ACCESS_KEY,
-        self.SECRET_KEY = credentials.Credentials.SECRET_KEY
+    def __init__(self):
+        pass
 
     def getconnection(self):
         ''' 
@@ -18,9 +14,6 @@ class Connection(object):
             during an execution context.
         '''
         if self.s3_connection == None:
-            self.s3_connection = S3Connection(
-                    self.ACCESS_KEY,
-                    self.SECRET_KEY
-            )
+            self.s3_connection = boto.connect_s3()
 
         return self.s3_connection

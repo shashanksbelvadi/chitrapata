@@ -56,5 +56,5 @@ target/
 # Cache folder
 photo_cache/*
 
-# AWS Credentials
-src/classes/credentials.py
+# Photos shouldn't be tracked
+src/photo_cache/*
