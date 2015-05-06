@@ -15,7 +15,7 @@ class Bucket(object):
     def download_contents(self, connection):
         try:
             bucket = connection.get_bucket(self.BUCKET_NAME, validate=True)
-
+            print bucket.list()
             for pic in bucket.list():
                 keystring = str(pic.key)
 
