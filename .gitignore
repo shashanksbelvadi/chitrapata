@@ -53,8 +53,9 @@ docs/_build/
 # PyBuilder
 target/
 
-# Cache folder
-photo_cache/*
-
 # Photos shouldn't be tracked
 src/photo_cache/*
+
+# OS X files
+src/.DS_Store
+src/classes/.DS_Store
