@@ -1,0 +1,21 @@
+.featured-image {
+    width: 100%;
+    height: 100%;
+  /*opacity: 0.90;*/
+}
+
+.dEyeLogo {
+    position: absolute;
+    left: 25%;
+    top: 30%;
+    width: 50%;
+    height: 50%;
+}
+
+.svgSeparator {
+    position: absolute;
+    left: 22%;
+    top: 20%;
+    fill: white;
+    opacity: 0.15;
+}
