@@ -16,6 +16,7 @@ function loadFeaturedImages() {
 
     setInterval(function() {
         setTimeout(function() {
+            removeFeaturedImage(featuredImage);
             loadFeaturedImage(featuredImage, featuredImages[i]);
         }, 5000);
 
@@ -24,6 +25,10 @@ function loadFeaturedImages() {
             i = 0;
         }
     }, 10000);
+}
+
+function removeFeaturedImage(featuredImage) {
+    featuredImage.removeAttribute("src");
 }
 
 function loadFeaturedImage(featuredImage, imageSrcPath) {
