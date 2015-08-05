@@ -15,10 +15,8 @@ function loadFeaturedImages() {
     loadFeaturedImage(featuredImage, featuredImages[i]);
 
     setInterval(function() {
-        setTimeout(function() {
-            removeFeaturedImage(featuredImage);
-            loadFeaturedImage(featuredImage, featuredImages[i]);
-        }, 5000);
+        removeFeaturedImage(featuredImage);
+        loadFeaturedImage(featuredImage, featuredImages[i]);
 
         i++;
         if (i == featuredImages.length) {
