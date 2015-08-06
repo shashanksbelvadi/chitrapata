@@ -13,6 +13,7 @@ function loadFeaturedImages() {
 
     var i = 0;
     loadFeaturedImage(featuredImage, featuredImages[i]);
+    i++;
 
     setInterval(function() {
         removeFeaturedImage(featuredImage);
@@ -26,10 +27,17 @@ function loadFeaturedImages() {
 }
 
 function removeFeaturedImage(featuredImage) {
-    featuredImage.removeAttribute("src");
+    featuredImage.remove();
 }
 
 function loadFeaturedImage(featuredImage, imageSrcPath) {
+    var featuredImg = document.createElement("img");
+    featuredImg.src = imageSrcPath;
+
+    var parent = document.getElementById("doc-body");
+    parent.appendChild(featuredImage);
+
+    featuredImage.removeAttribute("class");
     featuredImage.setAttribute("class", "featured-image");
     featuredImage.setAttribute("src", imageSrcPath);
     console.log("Done loading featured image.");
