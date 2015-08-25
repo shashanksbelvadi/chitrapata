@@ -1,15 +1,46 @@
 document.addEventListener("DOMContentLoaded", function(event) {
-    loadFeaturedImage();
+    loadFeaturedImages();
     loadDEyeLogo();
 });
 
-featuredImgSrc = "images/featuredImage.jpg"
+featuredImgSrc = "images/featuredImage.jpg";
+fI2 = "images/tamalpaisSunset.jpg";
+fI3 = "images/twinPeaksSunrise.jpg"
 dEyeLogoImg = "images/DEyeLogoWhite.png"
 
-function loadFeaturedImage() {
+function loadFeaturedImages() {
     var featuredImage = document.getElementById("featured-image");
+    var featuredImages = [featuredImgSrc, fI2, fI3];
+
+    var i = 0;
+    loadFeaturedImage(featuredImage, featuredImages[i]);
+    i++;
+
+    setInterval(function() {
+        removeFeaturedImage(featuredImage);
+        loadFeaturedImage(featuredImage, featuredImages[i]);
+
+        i++;
+        if (i == featuredImages.length) {
+            i = 0;
+        }
+    }, 7000);
+}
+
+function removeFeaturedImage(featuredImage) {
+    featuredImage.remove();
+}
+
+function loadFeaturedImage(featuredImage, imageSrcPath) {
+    var featuredImg = document.createElement("img");
+    featuredImg.src = imageSrcPath;
+
+    var parent = document.getElementById("doc-body");
+    parent.appendChild(featuredImage);
+
+    featuredImage.removeAttribute("class");
     featuredImage.setAttribute("class", "featured-image");
-    featuredImage.setAttribute("src", featuredImgSrc);
+    featuredImage.setAttribute("src", imageSrcPath);
     console.log("Done loading featured image.");
 }
 

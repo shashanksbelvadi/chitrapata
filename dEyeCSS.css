@@ -2,10 +2,19 @@
     background-size: cover;
     width: 100%;
     height: 100%;
+
+    /* Webkit browsers */
+    -webkit-animation: showFeaturedImageWebkit 4s;
+
+    /* Mozilla Firefox */
+    animation-duration: 4s;
+    animation-name: showFeaturedImageMozilla;
 }
 
 .menuBarObject {
     position: absolute;
+    width:100%;
+    height:75px;
     z-index: 10;
     top: 90%;
     left: 35%;
@@ -13,6 +22,7 @@
 
 .dEyeLogo {
     position: absolute;
+    z-index: 20;
     left: 26%;
     top: 30%;
     width: 50%;
@@ -21,8 +31,21 @@
 
 .svgSeparator {
     position: absolute;
+    z-index: 10;
     left: 23%;
     top: 20%;
     fill: white;
     opacity: 0.15;
+}
+
+/* Webkit browsers */
+@-webkit-keyframes showFeaturedImageWebkit {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Mozilla Firefox */
+@keyframes showFeaturedImageMozilla {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
