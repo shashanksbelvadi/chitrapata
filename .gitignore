@@ -57,5 +57,6 @@ target/
 deye/deye/src/photo_cache/*
 
 # OS X files
+*/.DS_Store
 deye/deye/src/.DS_Store
 deye/deye/src/classes/.DS_Store
