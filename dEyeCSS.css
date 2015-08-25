@@ -13,8 +13,8 @@
 
 .menuBarObject {
     position: absolute;
-    width:100%;
-    height:75px;
+    width: 100%;
+    height: 75px;
     z-index: 10;
     top: 90%;
     left: 35%;
@@ -31,6 +31,8 @@
 
 .svgSeparator {
     position: absolute;
+    height: 70%;
+    width: 60%;
     z-index: 10;
     left: 23%;
     top: 20%;
