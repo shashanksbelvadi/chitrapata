@@ -5,11 +5,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 featuredImgSrc = "images/featuredImage.jpg";
 fI2 = "images/tamalpaisSunset.jpg";
+fI3 = "images/twinPeaksSunrise.jpg"
 dEyeLogoImg = "images/DEyeLogoWhite.png"
 
 function loadFeaturedImages() {
     var featuredImage = document.getElementById("featured-image");
-    var featuredImages = [featuredImgSrc, fI2];
+    var featuredImages = [featuredImgSrc, fI2, fI3];
 
     var i = 0;
     loadFeaturedImage(featuredImage, featuredImages[i]);
@@ -23,7 +24,7 @@ function loadFeaturedImages() {
         if (i == featuredImages.length) {
             i = 0;
         }
-    }, 10000);
+    }, 7000);
 }
 
 function removeFeaturedImage(featuredImage) {
