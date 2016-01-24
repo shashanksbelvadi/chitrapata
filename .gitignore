@@ -58,5 +58,11 @@ deye/deye/src/photo_cache/*
 
 # OS X files
 */.DS_Store
-deye/deye/src/.DS_Store
-deye/deye/src/classes/.DS_Store
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
