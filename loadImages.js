@@ -43,7 +43,6 @@ function loadFeaturedImage(featuredImage, imageSrcPath) {
     featuredImage.removeAttribute("class");
     featuredImage.setAttribute("class", "featured-image");
     featuredImage.setAttribute("src", imageSrcPath);
-    console.log("Done loading featured image.");
 }
 
 function loadDEyeLogo() {
