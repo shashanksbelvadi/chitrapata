@@ -6,11 +6,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
 featuredImgSrc = "images/featuredImage.jpg";
 fI2 = "images/tamalpaisSunset.jpg";
 fI3 = "images/twinPeaksSunrise.jpg"
+fI4 = "images/pfeifferBeachSunset.jpg"
+fI5 = "images/poovarBackwaters.jpg"
 dEyeLogoImg = "images/DEyeLogoWhite.png"
 
 function loadFeaturedImages() {
     var featuredImage = document.getElementById("featured-image");
-    var featuredImages = [featuredImgSrc, fI2, fI3];
+    var featuredImages = [featuredImgSrc, fI2, fI3, fI4, fI5];
 
     var i = 0;
     loadFeaturedImage(featuredImage, featuredImages[i]);
