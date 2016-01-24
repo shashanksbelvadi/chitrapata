@@ -1,13 +1,10 @@
-import connection
-import bucket
+import authentication
 
 
 class Driver(object):
-
     def __init__(self):
-        c = connection.Connection()
-        b = bucket.Bucket('shashankssamplepics', c.getconnection())
-        
+        c = authentication.Authentication()
 
-if '__name__' == '__main__':
+
+if __name__ == "__main__":
     d = Driver()
