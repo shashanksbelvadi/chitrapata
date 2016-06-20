@@ -1,4 +1,5 @@
-from django.http import HTTPResponse
+from django.http import HttpResponse
 
-def loadinitialpage(request):
-    return HTTPResponse("Hello World!")
+def index(request):
+    template_name = 'deye/index.html'
+    return HttpResponse(open('/Users/sbelvadi/Documents/personal_workspace/deye-website/deye/deye/src/views/home.html', 'r').read())
