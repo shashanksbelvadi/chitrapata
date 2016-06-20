@@ -66,3 +66,6 @@ deye/deye/src/photo_cache/*
 Icon?
 ehthumbs.db
 Thumbs.db
+
+# Flickr keys
+deye/deye/flickr_keys.py
