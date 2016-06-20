@@ -67,4 +67,5 @@ Icon?
 ehthumbs.db
 Thumbs.db
 
+# Flickr Keys
 deye/deye/flickr_keys.py
